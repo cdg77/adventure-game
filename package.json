@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/cdg77/adventure-game",
   "dependencies": {
-    "commander": "^2.2.0"
+    "commander": "^2.2.0",
+    "jsi-gamelib": "git+ssh://git@github.com:portlandcodeschool/jsi-gamelib.git"
   }
 }
