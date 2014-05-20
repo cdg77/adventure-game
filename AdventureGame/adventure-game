@@ -6,7 +6,13 @@ var file = process.argv[2];
 var options = { encoding: 'utf8' };
 fs.readFile(file, options, function(err, contents) {
   var obj = JSON.parse(contents);
-  console.log('%j', obj.rooms);
+  // console.log('%j', obj.rooms);
+  obj.rooms.forEach(function(room) {
+    if (room.entrance) {
+       console.log(room);
+    };
+       
+  });
 });
 
 
