@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var fs = require('fs');
 var file = process.argv[2]; //'message.json';
 
@@ -10,3 +11,17 @@ fs.readFile(file, options, function(err, contents) {
 
 
 
+=======
+#!/usr/bin/env node
+
+var fs = require('fs');
+var file = process.argv[2];
+
+var options = { encoding: 'utf8' };
+fs.readFile(file, options, function(err, contents) {
+  var obj = JSON.parse(contents);
+  console.log('%j', obj.rooms);
+});
+
+
+>>>>>>> bff0ee9f9eee2f5401a7c15dc79f035a83c07665
