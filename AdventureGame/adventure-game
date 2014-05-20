@@ -21,4 +21,8 @@ fs.readFile(file, options, function(err, contents) {
 		console.log(startRoom);
 		console.log(treasureRoom);
 
+    // find room north of startRoom
+    var northRoom = findRoom(startRoom, 'north');
+    findRoom(startRoom.north)
+
 });
