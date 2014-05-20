@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/cdg77/adventure-game/issues"
   },
-  "homepage": "https://github.com/cdg77/adventure-game"
+  "homepage": "https://github.com/cdg77/adventure-game",
+  "dependencies": {
+    "commander": "^2.2.0"
+  }
 }
