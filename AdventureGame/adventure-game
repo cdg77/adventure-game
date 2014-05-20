@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+var file = process.argv[2];
+
+var options = { encoding: 'utf8' };
+fs.readFile(file, options, function(err, contents) {
+  var obj = JSON.parse(contents);
+  console.log('%j', obj.rooms);
+});
+
+
