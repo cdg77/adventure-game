@@ -19,5 +19,9 @@
   "dependencies": {
     "commander": "^2.2.0",
     "jsi-gamelib": "git+ssh://git@github.com:portlandcodeschool/jsi-gamelib.git"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.19.0"
   }
 }
