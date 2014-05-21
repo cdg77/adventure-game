@@ -5,7 +5,7 @@ var calculations = require('../game-functions.js');
 
 describe('nextRoom', function() {
 	it('finds the next room', function() {
-		var room = {
+		var roomA = {
 			"name": "A",
       "north": "D",
       "east": "B",
@@ -22,7 +22,7 @@ describe('nextRoom', function() {
       "south": "A",
       "west": null
     };
-		expect(calculations.nextRoom(room, direction, [room, roomD])).to.eql(roomD);
+		expect(calculations.nextRoom(roomA, direction, [roomA, roomD])).to.eql(roomD);
 	});
 
 });
