@@ -7,6 +7,22 @@
  * @returns {object} What it returns
  */
 
-var nextRoom = function(room, direction, mapArray) {
-    
-  };
+module.exports.nextRoom = function(currentRoom, direction, mapArray) {
+	var nameOfNextRoom = currentRoom.north;
+	var resultRoom;
+
+	mapArray.forEach(function(room){
+		if (room.name === nameOfNextRoom) {
+			resultRoom = room;
+		}
+	});
+	return resultRoom;
+
+
+
+    // mapArray.rooms.forEach(function(room) {
+    // 	if (room.north === D);
+    // 	nextRoom = ;
+    // });
+}  
+
