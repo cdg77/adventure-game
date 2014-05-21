@@ -2,6 +2,14 @@
 
 var fs = require('fs');
 var file = process.argv[2];
+var calculations = require('./game-functions.js');
+var readline = require('readline');
+
+var rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
 
 var options = { encoding: 'utf8' };
 fs.readFile(file, options, function(err, contents) {
@@ -22,10 +30,19 @@ fs.readFile(file, options, function(err, contents) {
 	console.log(startRoom);
 	console.log(treasureRoom);
 
-  // find room north of startRoom
-  var findRoom = function(room, direction) {
+  // User interface--------------------------
+
+
+  var question = 'You are standing in a room.  There are doors.  Which direction would You' +
+    'like to take?  ';
+  rl.question(question, function(direction) {
+    console.log('direction: %s', direction);
+
     
-  }
-  // var northRoom = findRoom(startRoom, 'north');
+    var resultRoom = calculations.nextRoom(startRoom, direction, obj.rooms);
+    console.log(resultRoom);
+
+    rl.close();
+  });
 
 });

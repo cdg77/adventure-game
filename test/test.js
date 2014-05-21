@@ -48,8 +48,6 @@ describe('nextRoom', function() {
 
 
 
-
-
   it.skip('finds the next room from the entire JSON file', function() {
     var obj = mapArray;
     var direction = 'north';
