@@ -7,6 +7,18 @@
  * @returns {object} What it returns
  */
 
-var nextRoom = function(room, direction, mapArray) {
-    
-  };
+module.exports.nextRoom = function(room, direction, mapArray) {
+	var direction = room.north;
+	var resultRoom;
+
+	mapArray.forEach(function(room) {
+    if (room.name === direction) {
+       console.log(room.name);
+       resultRoom = room;
+    } 
+  });
+  return resultRoom;    
+
+
+
+};
