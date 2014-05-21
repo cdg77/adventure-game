@@ -18,11 +18,14 @@ fs.readFile(file, options, function(err, contents) {
        treasureRoom = room;
     } 
   });
-		console.log(startRoom);
-		console.log(treasureRoom);
 
-    // find room north of startRoom
-    var northRoom = findRoom(startRoom, 'north');
-    findRoom(startRoom.north)
+	console.log(startRoom);
+	console.log(treasureRoom);
+
+  // find room north of startRoom
+  var findRoom = function(room, direction) {
+    
+  }
+  // var northRoom = findRoom(startRoom, 'north');
 
 });
