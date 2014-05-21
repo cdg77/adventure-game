@@ -9,23 +9,8 @@
 
 
 module.exports.nextRoom = function(currentRoom, direction, mapArray) {
-	var nameOfNextRoom;
+	var nameOfNextRoom = currentRoom[direction];
 	var resultRoom;
-
-	if (direction === "north") {
-		nameOfNextRoom = currentRoom.north;
-  }
-  if (direction === "south") {
-		nameOfNextRoom = currentRoom.south;
-  }
-  if (direction === "east") {
-		nameOfNextRoom = currentRoom.east;
-  }
-  if (direction === "west") {
-		nameOfNextRoom = currentRoom.west;
-  }
-
-
 
 	mapArray.forEach(function(room){
 		if (room.name === nameOfNextRoom) {
